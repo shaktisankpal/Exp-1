@@ -5,12 +5,129 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
   </head>
+  <link rel="stylesheet" href="styles.css" />
   <body>
-    <header>
-      <nav>
-        <a href="#about">About Me</a>| <a href="#skills">Skills</a>|
-        <a href="#contact">Contact Me</a>
-      </nav>
+    <header
+      style="
+        background-color: #222;
+        color: white;
+        padding: 15px 20px;
+        font-family: Arial, sans-serif;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      "
+    >
+      <div
+        style="
+          max-width: 1200px;
+          margin: 0 auto;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        "
+      >
+        <a
+          href="#home"
+          style="
+            font-size: 24px;
+            font-weight: bold;
+            text-decoration: none;
+            color: #fff;
+          "
+        >
+          Shakti's Portfolio
+        </a>
+
+        <nav>
+          <ul
+            style="
+              list-style: none;
+              margin: 0;
+              padding: 0;
+              display: flex;
+              gap: 20px;
+            "
+          >
+            <li>
+              <a
+                href="#home"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-size: 16px;
+                  font-weight: 500;
+                  transition: color 0.3s;
+                "
+                onmouseover="this.style.color='#4CAF50'"
+                onmouseout="this.style.color='white'"
+                >Home</a
+              >
+            </li>
+            <li>
+              <a
+                href="#about"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-size: 16px;
+                  font-weight: 500;
+                  transition: color 0.3s;
+                "
+                onmouseover="this.style.color='#4CAF50'"
+                onmouseout="this.style.color='white'"
+                >About Me</a
+              >
+            </li>
+            <li>
+              <a
+                href="#skills"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-size: 16px;
+                  font-weight: 500;
+                  transition: color 0.3s;
+                "
+                onmouseover="this.style.color='#4CAF50'"
+                onmouseout="this.style.color='white'"
+                >Skills</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projects"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-size: 16px;
+                  font-weight: 500;
+                  transition: color 0.3s;
+                "
+                onmouseover="this.style.color='#4CAF50'"
+                onmouseout="this.style.color='white'"
+                >Projects</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contact"
+                style="
+                  text-decoration: none;
+                  color: white;
+                  font-size: 16px;
+                  font-weight: 500;
+                  transition: color 0.3s;
+                "
+                onmouseover="this.style.color='#4CAF50'"
+                onmouseout="this.style.color='white'"
+                >Contact Me</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
     <section id="about">
@@ -21,7 +138,14 @@
             Shakti Mahesh Sankpal
           </h3>
 
-          <p>Hi my name is Shakti! My Current Academics Are:</p>
+          <p>
+            Second-year B.E. INFT student specializing in responsive web apps
+            with React, Express, and Django. Strong in problem-solving, data
+            structures, and algorithms. Experienced with Figma for UI/UX design.
+            Passionate about app development, with a keen interest in expanding
+            my knowledge in both hardware and software. <br />My Current
+            Academics Are:
+          </p>
           <ul
             style="
               font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman',
@@ -34,18 +158,36 @@
                 >VESIT</a
               >) - Batch Of 2027
             </li>
+            <ul class="details">
+              <li><strong>Average CGPA:</strong> 9.93</li>
+            </ul>
+            <li>
+              Maharashtra Health and Technical Common Entrance Test (<a
+                href="https://cetcell.mahacet.org/"
+                >MHT-CET</a
+              >) - 2023
+            </li>
+            <ul class="details">
+              <li><strong>Percentile:</strong> 98.4</li>
+            </ul>
             <li>
               12th HSC From New Horizon Scholar's School (<a
                 href="https://www.nhssthane.com/"
                 >NHSS</a
               >) - Batch of 2023
             </li>
+            <ul class="details">
+              <li><strong>Average Score:</strong> 93.6%</li>
+            </ul>
             <li>
               10th SSC From Rainbow International School (<a
                 href="https://rainbowinternationalschool.in/"
                 >RIS</a
               >) - Batch of 2021
             </li>
+            <ul class="details">
+              <li><strong>Average Score:</strong> 88%</li>
+            </ul>
           </ul>
         </div>
       </div>
@@ -53,75 +195,46 @@
 
     <section id="skills">
       <h1>Skills🛠️</h1>
-      <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif">Frontend</h3>
+
       <p>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-          alt="HTML"
-          width="70"
-        />
-
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d5/CSS3_logo_and_wordmark.svg"
-          alt="CSS"
-          width="50"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-          alt="JavaScript"
-          width="60"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg"
-          alt="React"
-          width="70"
-        />
+        <img src="./logos/c.jpg" alt="C" width="70" />
+        <img src="./logos/java.jpg" alt="C" width="70" />
+        <img src="./logos/html.jpg" alt="C" width="70" />
+        <img src="./logos/css.jpg" alt="C" width="70" />
+        <img src="./logos/js.jpg" alt="C" width="70" />
+        <img src="./logos/node.jpg" alt="C" width="70" />
+        <img src="./logos/express.jpg" alt="C" width="70" />
+        <img src="./logos/react.jpg" alt="C" width="70" />
+        <img src="./logos/git.jpg" alt="C" width="70" />
+        <img src="./logos/github.jpg" alt="C" width="70" />
+        <img src="./logos/docker.jpg" alt="C" width="70" />
+        <img src="./logos/mongo.jpg" alt="C" width="70" />
+        <img src="./logos/mysql-logo-pure.jpg" alt="C" width="70" />
+        <img src="./logos/figma.jpg" alt="C" width="70" />
+        <img src="./logos/tailwind.jpg" alt="C" width="70" />
+        <img src="./logos/bootstrap-4.jpg" alt="C" width="70" />
+        <img src="./logos/python-5.jpg" alt="C" width="70" />
+        <img src="./logos/django.jpg" alt="C" width="70" />
+        <img src="./logos/jenkins-1.jpg" alt="C" width="50" />
       </p>
+    </section>
 
-      <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif">Backend</h3>
-      <p>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/d/d9/Node.js_logo.svg"
-          alt="Node.js"
-          width="120"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-          alt="Python"
-          width="70"
-        />
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/3/30/Java_programming_language_logo.svg"
-          alt="Java"
-          width="50"
-        />
-      </p>
-
-      <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif">Database</h3>
-      <p>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/d/dd/MySQL_logo.svg"
-          alt="MySQL"
-          width="100"
-        />
-
-        <img
-          src="https://upload.wikimedia.org/wikipedia/en/thumb/5/5a/MongoDB_Fores-Green.svg/375px-MongoDB_Fores-Green.svg.png"
-          alt="MongoDB"
-          width="200"
-        />
-      </p>
-
-      <h3 style="font-family: Verdana, Geneva, Tahoma, sans-serif">
-        Containerization
-      </h3>
-      <p>
-        <img
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Docker_%28container_engine%29_logo.svg/915px-Docker_%28container_engine%29_logo.svg.png"
-          alt="Docker"
-          width="200"
-        />
-      </p>
+    <section id="projects">
+      <h1>Projects🗂️</h1>
+      <ul>
+        <li>
+          <a href="https://github.com/shaktisankpal/Exp-1.git"
+            >Static Portfolio Project</a
+          >
+        </li>
+        <li><a href="">Project On Django-Python</a></li>
+        <li><a href="">Tic-Tac-Toe App On React JS</a></li>
+        <li>
+          <a href=""
+            >Crowdfunding Website For Renewable Energy Projects On MERN Stack</a
+          >
+        </li>
+      </ul>
     </section>
 
     <section id="contact">
@@ -135,5 +248,43 @@
         Maharashtra, India (400608)
       </address>
     </section>
+    <section id="profiles">
+      <h1>Profiles🌐</h1>
+      <a href="https://www.instagram.com/_shakti_sankpal/"
+        ><img src="./logos/instagram-2016-5.svg" alt="" width="70" />
+      </a>
+      <a href="https://github.com/shaktisankpal/"
+        ><img src="./logos/github.jpg" alt="" width="70" />
+      </a>
+      <a href="https://leetcode.com/u/shaktisankpal42/"
+        ><img src="./logos/leetcode-1.svg" alt="" width="70" />
+      </a>
+      <a href="https://leetcode.com/u/shaktisankpal42/"
+        ><img src="./logos/linkedin-icon-3.svg" alt="" width="70" />
+      </a>
+    </section>
+    <footer>
+      <div
+        style="
+          background-color: #222;
+          color: white;
+          text-align: center;
+          padding: 20px;
+          font-family: Arial, sans-serif;
+        "
+      >
+        <p style="margin: 5px; font-size: 16px">
+          Designed and Built with ❤️ by
+          <strong>Shakti Mahesh Sankpal</strong>
+        </p>
+        <p style="margin: 5px; font-size: 14px">
+          "Innovation distinguishes between a leader and a follower." –
+          <em>Steve Jobs</em>
+        </p>
+        <p style="margin: 5px; font-size: 14px">
+          © 2025 Shakti Mahesh Sankpal. All Rights Reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
